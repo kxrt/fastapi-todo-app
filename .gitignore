@@ -1,4 +1,4 @@
-backend/__pycache__
-backend/request.py
-frontend/yarn.lock
+*/__pycache__/*
+*/request.py
+*/yarn.lock
 

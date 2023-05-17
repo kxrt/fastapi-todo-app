@@ -24,7 +24,6 @@ db: TodoApplication = TodoApplication()
 
 @app.post("/add")
 async def add_item(item: Item):
-  print(item)
   result = db.add_item(item)
   return {"id": result}
 
