@@ -1,0 +1,230 @@
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
+  color: white;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+.bgDesktop {
+  position: absolute;
+  top: 0;
+}
+
+.bgMobile {
+  display: none;
+}
+
+.boundingBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  width: 450px;
+  overflow: hidden;
+  position: relative;
+  height: 550px;
+}
+
+.informationBox {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  align-items: center;
+  text-align: center;
+}
+
+.heading {
+  font-size: 28.5px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.orderDescription {
+  font-weight: 500;
+  margin-inline: 50px;
+  margin-bottom: 20px;
+  color: hsl(224, 23%, 55%);
+}
+
+.orderDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  width: 320px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.orderDetailsIcon {
+  margin-right: 20px;
+}
+
+.orderDetailsIcon img {
+  display: block;
+}
+
+.orderDetailsLeft {
+  display: flex;
+  flex-direction: row;
+}
+
+.orderDetailsText {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.orderName {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.orderPrice {
+  color: hsl(224, 23%, 55%);
+}
+
+.orderChangeButton {
+  all: unset;
+  color :hsl(245, 75%, 52%);
+  text-decoration: underline;
+  font-weight: 900;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.orderChangeButton:hover {
+  text-decoration: none;
+  color: hsl(245, 83%, 68%);
+}
+
+.proceedButton {
+  all: unset;
+  background-color: hsl(245, 75%, 52%);
+  width: 360px;
+  color: white;
+  font-size: 14px;
+  font-weight: 900;
+  margin-block: 20px;
+  padding-block: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 20px hsl(245, 83%, 88%);
+  cursor: pointer;
+}
+
+.proceedButton:hover {
+  background-color: hsl(245, 83%, 68%);
+}
+
+.addTaskButton {
+  all: unset;
+  background-color: hsl(245, 75%, 52%);
+  width: 300px;
+  color: white;
+  font-size: 14px;
+  font-weight: 900;
+  margin-block: 20px;
+  padding-block: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 20px hsl(245, 83%, 88%);
+  cursor: pointer;
+}
+
+.addTaskButton:hover {
+  background-color: hsl(245, 83%, 68%);
+}
+
+.cancelButton {
+  all: unset;
+  width: 79%;
+  color: hsl(224, 23%, 55%);
+  font-size: 14px;
+  font-weight: 900;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.cancelButton:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media (max-width : 900px) {
+  .bgDesktop {
+    display: none;
+  }
+
+  .bgMobile {
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+
+  .boundingBox {
+    width: 375px;
+  }
+
+  .orderDetails {
+    width: 260px;
+  }
+
+  .proceedButton {
+    width: 300px;
+  }
+}
+
+.taskBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  width: 320px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.taskDescription {
+  font-weight: 500;
+  margin-inline: 50px;
+  margin-bottom: 20px;
+  color: hsl(224, 23%, 55%);
+}
+
+.taskDueDate {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.sideBySidePanel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px
+}

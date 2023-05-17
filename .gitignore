@@ -1,4 +1,7 @@
+*/__pycache__
 */__pycache__/*
 */request.py
 */yarn.lock
+*/node_modules
+*/node_modules/*
 
